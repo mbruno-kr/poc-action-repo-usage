@@ -1,0 +1,14 @@
+name: Usage
+
+on: [push]
+
+jobs:
+  test:
+    name: 'Test'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Your Repo
+        uses: actions/checkout@v3
+
+      - name: Hello World
+        uses: mbruno-kr/poc-action-repo/actions/poc-action-repo-action@main
